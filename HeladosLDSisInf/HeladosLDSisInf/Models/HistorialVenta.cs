@@ -7,11 +7,13 @@ using System.Threading.Tasks;
 
 namespace HeladosLDSisInf.Models
 {
-    public class Venta
+    public class HistorialVenta
     {
         [Key]
         public int V_Id { get; set; }
         public Decimal Ganancia { get; set;}
         public string V_Desc { get; set;}
+        //un historial de ventas tiene muchos pedidos 
+        virtual public List<Pedido> Pedido { get; set; }   
     }
 }

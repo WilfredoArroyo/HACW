@@ -1,4 +1,5 @@
-﻿using System;
+﻿using HeladosLDSisInf.Context;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -31,7 +32,18 @@ namespace HeladosLDSisInf
             Btn_Siguiente.Visible = false;
             PBox_Img2.Visible = false;
             Lb_IngNom.Visible = false;
-            txt_Nom.Visible = false;  
+            txt_Nom.Visible = false;
+
+
+            //truco para convertir (mapear) las clases persistentes a tablas en base de datos
+            HeladeriaContext context = new HeladeriaContext();
+
+            context.Usuario.ToList();
+            context.Pedido.ToList();
+            context.Producto.ToList();
+            context.Helado.ToList();
+            context.HistorialVenta.ToList();
+            context.Cliente.ToList();
         }
         private void txt_Nom_TextChanged_1(object sender, EventArgs e)
         {

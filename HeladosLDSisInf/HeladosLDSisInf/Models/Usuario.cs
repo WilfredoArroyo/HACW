@@ -16,5 +16,7 @@ namespace HeladosLDSisInf.Models
         public string NombreCompleto { get; set; }
         [Required]
         public string TipoUsuario { get; set; }
+        //un ususario tiene muchos pedidos
+        virtual public List<Pedido> Pedido { get; set; }
     }
 }

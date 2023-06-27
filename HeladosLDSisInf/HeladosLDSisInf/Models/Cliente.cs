@@ -14,5 +14,7 @@ namespace HeladosLDSisInf.Models
         [Required]
         public string NombreCompleto { get; set; }
         public int Ci { get; set; }
+        //un Cliente tiene muchos pedidos
+        virtual public List<Pedido> Pedidos { get; set; }
     }
 }
