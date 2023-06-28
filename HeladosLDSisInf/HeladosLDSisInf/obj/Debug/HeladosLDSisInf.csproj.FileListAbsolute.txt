@@ -20,3 +20,4 @@ F:\semestre 1-2023\SIS2420-B\Proyecto A-T sem 2023-1\HeladosLDSisInf\HeladosLDSi
 F:\semestre 1-2023\SIS2420-B\Proyecto A-T sem 2023-1\HeladosLDSisInf\HeladosLDSisInf\bin\Debug\EntityFramework.SqlServer.xml
 F:\semestre 1-2023\SIS2420-B\Proyecto A-T sem 2023-1\HeladosLDSisInf\HeladosLDSisInf\obj\Debug\HeladosLDSisInf.csproj.CopyComplete
 F:\semestre 1-2023\SIS2420-B\Proyecto A-T sem 2023-1\HeladosLDSisInf\HeladosLDSisInf\obj\Debug\HeladosLDSisInf.Frm_Sistema.resources
+F:\semestre 1-2023\SIS2420-B\Proyecto A-T sem 2023-1\HeladosLDSisInf\HeladosLDSisInf\obj\Debug\HeladosLDSisInf.Frm_Cobro.resources

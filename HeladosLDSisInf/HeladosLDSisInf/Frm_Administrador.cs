@@ -70,7 +70,7 @@ namespace HeladosLDSisInf
             Panel_Producto.Visible = false;
             Panel_HeladoIv.Visible = false;
             Panel_Pedido.Visible = false;
-            Panel_Cliente.Visible = true;
+            Panel_Cliente.Visible = false;
             clienteBindingSource.DataSource = _clienteController.GetAll();
             pedidoBindingSource.DataSource = _pedidoController.GetAll();
             heladoBindingSource.DataSource = _heladoController.GetAll();
@@ -418,6 +418,13 @@ namespace HeladosLDSisInf
             Panel_Pedido.Visible = false;
             Panel_Cliente.Visible = true;
             clienteBindingSource.DataSource = _clienteController.GetAll();
+        }
+
+        private void Btn_Prueba_Click(object sender, EventArgs e)
+        {
+            Panel_Cliente.Visible=true;
+            clienteDataGridView.Visible=true;
+            clienteDataGridView.DataSource = _clienteController.GetAll();
         }
         //-----------------------------------------------------------------
     }

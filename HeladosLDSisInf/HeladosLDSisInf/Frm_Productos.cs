@@ -17,7 +17,7 @@ namespace HeladosLDSisInf
         {
             InitializeComponent();
             NombreF = nom;
-            TimerProducto.Interval = 12000;
+            TimerProducto.Interval = 120000;
             TimerProducto.Tick += TimerProducto_Tick;
             TimerProducto.Start();
 
@@ -36,6 +36,10 @@ namespace HeladosLDSisInf
         private void Frm_Productos_Load(object sender, EventArgs e)
         {
             lbl_Nombre.Text ="Hola Bienvenido "+NombreF;
+            Panel_AceptarT.Visible = false;
+            panel_Extras.Visible = false;
+            Panel_Helados.Visible = false;
+            Panel_Sabores.Visible = false;
         }
 
         private void Frm_Productos_FormClosing(object sender, FormClosingEventArgs e)
@@ -47,6 +51,8 @@ namespace HeladosLDSisInf
         {
             Panel_Helados.Visible = true;
             Panel_Sabores.Visible = false;
+            panel_Extras.Visible = false;
+            
         }
 
         private void Btn_Helados_MouseClick(object sender, MouseEventArgs e)
@@ -85,18 +91,21 @@ namespace HeladosLDSisInf
         {
             Panel_Helados.Visible = false;
             Panel_Sabores.Visible = true;
+            panel_Extras.Visible = false;
         }
 
         private void Btn_Recipiente_Click(object sender, EventArgs e)
         {
             Panel_Helados.Visible = false;
             Panel_Sabores.Visible = false;
+            panel_Extras.Visible = false;
         }
 
         private void Btn_Extras_Click(object sender, EventArgs e)
         {
             Panel_Helados.Visible = false;
             Panel_Sabores.Visible = false;
+            panel_Extras.Visible = true;
         }
 
         private void Btn_Helado1P_Click(object sender, EventArgs e)
@@ -143,6 +152,56 @@ namespace HeladosLDSisInf
         {
             base.OnActivated(e);
             // Aquí puedes reactivar los eventos o funciones cuando vuelvas al formulario
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Btn_Siguiente_Click(object sender, EventArgs e)
+        {
+            panel_Extras.Visible = true;
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            panel_Extras.Visible = false;
+            Panel_AceptarT.Visible = true;
+            List<Pedido> pedido = new List<Pedido>
+            {
+                new Pedido { Descripcion = "Helado de fresa,Coco en Cono", Precio = 4 },
+                new Pedido { Descripcion = "Helado de Oreo,Banana en varquillo", Precio = 5 },
+                new Pedido { Descripcion = "Helado de chocolate,Frutilla en Cono", Precio = 4 }
+            };
+            foreach (Pedido persona in pedido)
+            {
+                TablaPedido.Rows.Add(persona.Descripcion, persona.Precio);
+            }
+        }
+        public class Pedido
+        {
+            public string Descripcion { get; set; }
+            public Decimal Precio { get; set; }
+        }
+
+        private void btn_Pagar_Click(object sender, EventArgs e)
+        {
+            Frm_Cobro cobro = new Frm_Cobro();
+            cobro.Show();
+            this.Hide();
+        }
+
+        private void Btn_CancelarPedido_Click(object sender, EventArgs e)
+        {
+            Frm_Inicio frm_Inicio = new Frm_Inicio();
+            frm_Inicio.Show();
+            this.Hide();
         }
     }
 }

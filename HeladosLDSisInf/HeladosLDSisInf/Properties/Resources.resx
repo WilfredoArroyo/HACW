@@ -121,6 +121,9 @@
   <data name="promocion_martes_miercoles" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\promocion_martes_miercoles.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="FRmproductopantalla" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FRmproductopantalla.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Sabor Coco" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Sabor Coco.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -130,8 +133,14 @@
   <data name="Sabor frutilla" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Sabor frutilla.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="ChispasMulticolores" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ChispasMulticolores.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="sabor oreo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\sabor oreo.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SalsaChocolate" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SalsaChocolate.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="FRm producto pantalla" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\FRm producto pantalla.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -166,7 +175,10 @@
   <data name="IconoLogin" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\IconoLogin.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="FRmproductopantalla" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\FRmproductopantalla.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ChispasChocolate" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ChispasChocolate.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="QrImage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\QrImage.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

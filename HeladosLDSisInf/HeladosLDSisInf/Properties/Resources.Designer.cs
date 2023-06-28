@@ -63,6 +63,26 @@ namespace HeladosLDSisInf.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap ChispasChocolate {
+            get {
+                object obj = ResourceManager.GetObject("ChispasChocolate", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ChispasMulticolores {
+            get {
+                object obj = ResourceManager.GetObject("ChispasMulticolores", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap FRm_producto_pantalla {
             get {
                 object obj = ResourceManager.GetObject("FRm producto pantalla", resourceCulture);
@@ -153,6 +173,16 @@ namespace HeladosLDSisInf.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap QrImage {
+            get {
+                object obj = ResourceManager.GetObject("QrImage", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Sabor_banana {
             get {
                 object obj = ResourceManager.GetObject("Sabor banana", resourceCulture);
@@ -226,6 +256,16 @@ namespace HeladosLDSisInf.Properties {
         internal static System.Drawing.Bitmap sabor_oreo {
             get {
                 object obj = ResourceManager.GetObject("sabor oreo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap SalsaChocolate {
+            get {
+                object obj = ResourceManager.GetObject("SalsaChocolate", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

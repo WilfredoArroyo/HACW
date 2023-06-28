@@ -42,6 +42,31 @@
             this.TimerProducto = new System.Windows.Forms.Timer(this.components);
             this.lbl_Nombre = new System.Windows.Forms.Label();
             this.Panel_Sabores = new System.Windows.Forms.Panel();
+            this.panel_Extras = new System.Windows.Forms.Panel();
+            this.Panel_AceptarT = new System.Windows.Forms.Panel();
+            this.Btn_CancelarPedido = new System.Windows.Forms.Button();
+            this.btn_Pagar = new System.Windows.Forms.Button();
+            this.label14 = new System.Windows.Forms.Label();
+            this.TablaPedido = new System.Windows.Forms.DataGridView();
+            this.DescripcionHeladoData = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PrecioTotalData = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btn_AceptarCompra = new System.Windows.Forms.Button();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.button10 = new System.Windows.Forms.Button();
+            this.button9 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.Btn_Siguiente = new System.Windows.Forms.Button();
+            this.Btn_Resear = new System.Windows.Forms.Button();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.button8 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
@@ -50,8 +75,13 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.btn_Banana = new System.Windows.Forms.Button();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
             this.Panel_Helados.SuspendLayout();
             this.Panel_Sabores.SuspendLayout();
+            this.panel_Extras.SuspendLayout();
+            this.Panel_AceptarT.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.TablaPedido)).BeginInit();
             this.SuspendLayout();
             // 
             // Panel_Helados
@@ -63,7 +93,7 @@
             this.Panel_Helados.Controls.Add(this.Btn_Helado1P);
             this.Panel_Helados.Location = new System.Drawing.Point(237, 77);
             this.Panel_Helados.Name = "Panel_Helados";
-            this.Panel_Helados.Size = new System.Drawing.Size(848, 543);
+            this.Panel_Helados.Size = new System.Drawing.Size(797, 543);
             this.Panel_Helados.TabIndex = 12;
             // 
             // Btn_Helado3P
@@ -241,6 +271,17 @@
             // Panel_Sabores
             // 
             this.Panel_Sabores.BackColor = System.Drawing.Color.Transparent;
+            this.Panel_Sabores.Controls.Add(this.panel_Extras);
+            this.Panel_Sabores.Controls.Add(this.Btn_Siguiente);
+            this.Panel_Sabores.Controls.Add(this.Btn_Resear);
+            this.Panel_Sabores.Controls.Add(this.label8);
+            this.Panel_Sabores.Controls.Add(this.label7);
+            this.Panel_Sabores.Controls.Add(this.label6);
+            this.Panel_Sabores.Controls.Add(this.label5);
+            this.Panel_Sabores.Controls.Add(this.label4);
+            this.Panel_Sabores.Controls.Add(this.label3);
+            this.Panel_Sabores.Controls.Add(this.label2);
+            this.Panel_Sabores.Controls.Add(this.label1);
             this.Panel_Sabores.Controls.Add(this.button8);
             this.Panel_Sabores.Controls.Add(this.button7);
             this.Panel_Sabores.Controls.Add(this.button6);
@@ -251,8 +292,291 @@
             this.Panel_Sabores.Controls.Add(this.btn_Banana);
             this.Panel_Sabores.Location = new System.Drawing.Point(237, 77);
             this.Panel_Sabores.Name = "Panel_Sabores";
-            this.Panel_Sabores.Size = new System.Drawing.Size(731, 543);
+            this.Panel_Sabores.Size = new System.Drawing.Size(933, 543);
             this.Panel_Sabores.TabIndex = 19;
+            // 
+            // panel_Extras
+            // 
+            this.panel_Extras.Controls.Add(this.Panel_AceptarT);
+            this.panel_Extras.Controls.Add(this.btn_AceptarCompra);
+            this.panel_Extras.Controls.Add(this.label13);
+            this.panel_Extras.Controls.Add(this.label12);
+            this.panel_Extras.Controls.Add(this.label11);
+            this.panel_Extras.Controls.Add(this.button10);
+            this.panel_Extras.Controls.Add(this.button9);
+            this.panel_Extras.Controls.Add(this.button1);
+            this.panel_Extras.Location = new System.Drawing.Point(0, 0);
+            this.panel_Extras.Name = "panel_Extras";
+            this.panel_Extras.Size = new System.Drawing.Size(933, 543);
+            this.panel_Extras.TabIndex = 21;
+            // 
+            // Panel_AceptarT
+            // 
+            this.Panel_AceptarT.BackColor = System.Drawing.Color.Transparent;
+            this.Panel_AceptarT.Controls.Add(this.Btn_CancelarPedido);
+            this.Panel_AceptarT.Controls.Add(this.btn_Pagar);
+            this.Panel_AceptarT.Controls.Add(this.label14);
+            this.Panel_AceptarT.Controls.Add(this.TablaPedido);
+            this.Panel_AceptarT.Location = new System.Drawing.Point(0, 0);
+            this.Panel_AceptarT.Name = "Panel_AceptarT";
+            this.Panel_AceptarT.Size = new System.Drawing.Size(933, 543);
+            this.Panel_AceptarT.TabIndex = 24;
+            // 
+            // Btn_CancelarPedido
+            // 
+            this.Btn_CancelarPedido.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.Btn_CancelarPedido.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.Btn_CancelarPedido.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_CancelarPedido.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_CancelarPedido.ForeColor = System.Drawing.Color.White;
+            this.Btn_CancelarPedido.Location = new System.Drawing.Point(625, 341);
+            this.Btn_CancelarPedido.Name = "Btn_CancelarPedido";
+            this.Btn_CancelarPedido.Size = new System.Drawing.Size(229, 68);
+            this.Btn_CancelarPedido.TabIndex = 22;
+            this.Btn_CancelarPedido.Text = "CANCELAR";
+            this.Btn_CancelarPedido.UseVisualStyleBackColor = false;
+            this.Btn_CancelarPedido.Click += new System.EventHandler(this.Btn_CancelarPedido_Click);
+            // 
+            // btn_Pagar
+            // 
+            this.btn_Pagar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btn_Pagar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btn_Pagar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Pagar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Pagar.ForeColor = System.Drawing.Color.White;
+            this.btn_Pagar.Location = new System.Drawing.Point(625, 175);
+            this.btn_Pagar.Name = "btn_Pagar";
+            this.btn_Pagar.Size = new System.Drawing.Size(229, 68);
+            this.btn_Pagar.TabIndex = 21;
+            this.btn_Pagar.Text = "PAGAR";
+            this.btn_Pagar.UseVisualStyleBackColor = false;
+            this.btn_Pagar.Click += new System.EventHandler(this.btn_Pagar_Click);
+            // 
+            // label14
+            // 
+            this.label14.BackColor = System.Drawing.Color.Transparent;
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.ForeColor = System.Drawing.Color.White;
+            this.label14.Location = new System.Drawing.Point(535, 97);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(395, 49);
+            this.label14.TabIndex = 21;
+            this.label14.Text = "PRECIO TOTAL: 13,00Bs";
+            // 
+            // TablaPedido
+            // 
+            this.TablaPedido.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.TablaPedido.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.DescripcionHeladoData,
+            this.PrecioTotalData});
+            this.TablaPedido.Location = new System.Drawing.Point(160, 86);
+            this.TablaPedido.Name = "TablaPedido";
+            this.TablaPedido.RowHeadersWidth = 51;
+            this.TablaPedido.RowTemplate.Height = 24;
+            this.TablaPedido.Size = new System.Drawing.Size(366, 377);
+            this.TablaPedido.TabIndex = 0;
+            // 
+            // DescripcionHeladoData
+            // 
+            this.DescripcionHeladoData.HeaderText = "Descripcion del helado";
+            this.DescripcionHeladoData.MinimumWidth = 6;
+            this.DescripcionHeladoData.Name = "DescripcionHeladoData";
+            this.DescripcionHeladoData.Width = 125;
+            // 
+            // PrecioTotalData
+            // 
+            this.PrecioTotalData.HeaderText = "PrecioTotal";
+            this.PrecioTotalData.MinimumWidth = 6;
+            this.PrecioTotalData.Name = "PrecioTotalData";
+            this.PrecioTotalData.Width = 125;
+            // 
+            // btn_AceptarCompra
+            // 
+            this.btn_AceptarCompra.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btn_AceptarCompra.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btn_AceptarCompra.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_AceptarCompra.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_AceptarCompra.ForeColor = System.Drawing.Color.White;
+            this.btn_AceptarCompra.Location = new System.Drawing.Point(756, 447);
+            this.btn_AceptarCompra.Name = "btn_AceptarCompra";
+            this.btn_AceptarCompra.Size = new System.Drawing.Size(138, 64);
+            this.btn_AceptarCompra.TabIndex = 21;
+            this.btn_AceptarCompra.Text = "ACEPTAR";
+            this.btn_AceptarCompra.UseVisualStyleBackColor = false;
+            this.btn_AceptarCompra.Click += new System.EventHandler(this.button11_Click);
+            // 
+            // label13
+            // 
+            this.label13.BackColor = System.Drawing.Color.Transparent;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.label13.Location = new System.Drawing.Point(650, 371);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(179, 69);
+            this.label13.TabIndex = 23;
+            this.label13.Text = "Chispas Multicolor";
+            // 
+            // label12
+            // 
+            this.label12.BackColor = System.Drawing.Color.Transparent;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.label12.Location = new System.Drawing.Point(376, 373);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(179, 69);
+            this.label12.TabIndex = 22;
+            this.label12.Text = "Chispas de Chocolate";
+            // 
+            // label11
+            // 
+            this.label11.BackColor = System.Drawing.Color.Transparent;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.label11.Location = new System.Drawing.Point(106, 373);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(158, 69);
+            this.label11.TabIndex = 21;
+            this.label11.Text = "Salsa de chocolate";
+            // 
+            // button10
+            // 
+            this.button10.BackgroundImage = global::HeladosLDSisInf.Properties.Resources.ChispasMulticolores;
+            this.button10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button10.Location = new System.Drawing.Point(649, 144);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(180, 175);
+            this.button10.TabIndex = 2;
+            this.button10.UseVisualStyleBackColor = true;
+            // 
+            // button9
+            // 
+            this.button9.BackgroundImage = global::HeladosLDSisInf.Properties.Resources.ChispasChocolate;
+            this.button9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button9.Location = new System.Drawing.Point(366, 144);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(189, 175);
+            this.button9.TabIndex = 1;
+            this.button9.UseVisualStyleBackColor = true;
+            // 
+            // button1
+            // 
+            this.button1.BackgroundImage = global::HeladosLDSisInf.Properties.Resources.SalsaChocolate;
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button1.Location = new System.Drawing.Point(80, 144);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(202, 178);
+            this.button1.TabIndex = 0;
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // Btn_Siguiente
+            // 
+            this.Btn_Siguiente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.Btn_Siguiente.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.Btn_Siguiente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_Siguiente.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_Siguiente.ForeColor = System.Drawing.Color.White;
+            this.Btn_Siguiente.Location = new System.Drawing.Point(727, 459);
+            this.Btn_Siguiente.Name = "Btn_Siguiente";
+            this.Btn_Siguiente.Size = new System.Drawing.Size(183, 64);
+            this.Btn_Siguiente.TabIndex = 21;
+            this.Btn_Siguiente.Text = "SIGUIENTE";
+            this.Btn_Siguiente.UseVisualStyleBackColor = false;
+            this.Btn_Siguiente.Click += new System.EventHandler(this.Btn_Siguiente_Click);
+            // 
+            // Btn_Resear
+            // 
+            this.Btn_Resear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.Btn_Resear.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.Btn_Resear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_Resear.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_Resear.ForeColor = System.Drawing.Color.White;
+            this.Btn_Resear.Location = new System.Drawing.Point(727, 357);
+            this.Btn_Resear.Name = "Btn_Resear";
+            this.Btn_Resear.Size = new System.Drawing.Size(183, 64);
+            this.Btn_Resear.TabIndex = 22;
+            this.Btn_Resear.Text = "CANCELAR SABOR";
+            this.Btn_Resear.UseVisualStyleBackColor = false;
+            // 
+            // label8
+            // 
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.White;
+            this.label8.Location = new System.Drawing.Point(561, 442);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(140, 69);
+            this.label8.TabIndex = 15;
+            this.label8.Text = "Sabor Chocolate 1,50Bs";
+            // 
+            // label7
+            // 
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.White;
+            this.label7.Location = new System.Drawing.Point(532, 192);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(140, 69);
+            this.label7.TabIndex = 14;
+            this.label7.Text = "Sabor Frutilla 1,50Bs";
+            // 
+            // label6
+            // 
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.Location = new System.Drawing.Point(41, 442);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(140, 69);
+            this.label6.TabIndex = 13;
+            this.label6.Text = "Sabor Limon 1,50Bs";
+            // 
+            // label5
+            // 
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(208, 442);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(140, 69);
+            this.label5.TabIndex = 12;
+            this.label5.Text = "Sabor Maracuya 1,50Bs";
+            // 
+            // label4
+            // 
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(362, 442);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(140, 69);
+            this.label4.TabIndex = 11;
+            this.label4.Text = "Sabor Oreo 1,50Bs";
+            // 
+            // label3
+            // 
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(358, 192);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(140, 69);
+            this.label3.TabIndex = 10;
+            this.label3.Text = "Sabor Fresa 1,50Bs";
+            // 
+            // label2
+            // 
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(208, 192);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(140, 69);
+            this.label2.TabIndex = 9;
+            this.label2.Text = "Sabor Coco 1,50Bs";
+            // 
+            // label1
+            // 
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(41, 192);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(140, 69);
+            this.label1.TabIndex = 8;
+            this.label1.Text = "Sabor Banana 1,50Bs";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // button8
             // 
@@ -334,12 +658,33 @@
             this.btn_Banana.TabIndex = 0;
             this.btn_Banana.UseVisualStyleBackColor = true;
             // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(314, 665);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(0, 16);
+            this.label9.TabIndex = 20;
+            // 
+            // label10
+            // 
+            this.label10.BackColor = System.Drawing.Color.Transparent;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.White;
+            this.label10.Location = new System.Drawing.Point(227, 635);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(403, 69);
+            this.label10.TabIndex = 16;
+            this.label10.Text = "PRECIO TOTAL: 13,00Bs";
+            // 
             // Frm_Productos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::HeladosLDSisInf.Properties.Resources.FRm_producto_pantalla;
             this.ClientSize = new System.Drawing.Size(1237, 723);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.label9);
             this.Controls.Add(this.Panel_Sabores);
             this.Controls.Add(this.lbl_Nombre);
             this.Controls.Add(this.Btn_Extras);
@@ -360,6 +705,9 @@
             this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Frm_Productos_MouseMove);
             this.Panel_Helados.ResumeLayout(false);
             this.Panel_Sabores.ResumeLayout(false);
+            this.panel_Extras.ResumeLayout(false);
+            this.Panel_AceptarT.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.TablaPedido)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -387,5 +735,32 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button btn_Banana;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button Btn_Siguiente;
+        private System.Windows.Forms.Button Btn_Resear;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Panel panel_Extras;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Button btn_AceptarCompra;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Panel Panel_AceptarT;
+        private System.Windows.Forms.DataGridView TablaPedido;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DescripcionHeladoData;
+        private System.Windows.Forms.DataGridViewTextBoxColumn PrecioTotalData;
+        private System.Windows.Forms.Button Btn_CancelarPedido;
+        private System.Windows.Forms.Button btn_Pagar;
+        private System.Windows.Forms.Label label14;
     }
 }

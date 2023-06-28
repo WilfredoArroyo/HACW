@@ -63,11 +63,6 @@
             this.lbl_Prueba = new System.Windows.Forms.Label();
             this.Btn_GUsuario = new System.Windows.Forms.Button();
             this.DGB_Usuario = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.usuarioBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.GroupBox_usuario = new System.Windows.Forms.GroupBox();
             this.Btn_Cancelar = new System.Windows.Forms.Button();
             this.Btn_Guardar = new System.Windows.Forms.Button();
@@ -94,18 +89,12 @@
             this.label1 = new System.Windows.Forms.Label();
             this.dataTime_InicioHV = new System.Windows.Forms.DateTimePicker();
             this.historialVentaDataGridView = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.historialVentaBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.Panel_Producto = new System.Windows.Forms.Panel();
             this.btn_AumentatCantidadPR = new System.Windows.Forms.Button();
             this.groupBoxverInProducto = new System.Windows.Forms.GroupBox();
             this.btn_CancelarP = new System.Windows.Forms.Button();
             this.groupBox_Atri_Producto = new System.Windows.Forms.GroupBox();
             this.cantidadTextBox = new System.Windows.Forms.TextBox();
-            this.productoBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.idTextBox = new System.Windows.Forms.TextBox();
             this.nom_ProductoTextBox = new System.Windows.Forms.TextBox();
             this.precioTTextBox = new System.Windows.Forms.TextBox();
@@ -116,21 +105,9 @@
             this.txt_ACantidad = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.productoDataGridView = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Panel_HeladoIv = new System.Windows.Forms.Panel();
             this.Btn_AgregarSHE = new System.Windows.Forms.Button();
             this.heladoDataGridView = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn16 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn17 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn18 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn19 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn20 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.heladoBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.groupBox_Helado = new System.Windows.Forms.GroupBox();
             this.btn_Cancelar_HeladoInv = new System.Windows.Forms.Button();
@@ -151,22 +128,25 @@
             this.btn_AgregarCliente = new System.Windows.Forms.Button();
             this.Btn_CancelarCliente = new System.Windows.Forms.Button();
             this.c_IdTextBox = new System.Windows.Forms.TextBox();
-            this.clienteBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.ciTextBox = new System.Windows.Forms.TextBox();
             this.nombreCompletoTextBox1 = new System.Windows.Forms.TextBox();
             this.clienteDataGridView = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn27 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn28 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn29 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.button1 = new System.Windows.Forms.Button();
             this.groupBox_Pedido = new System.Windows.Forms.GroupBox();
             this.descripcionTextBox = new System.Windows.Forms.TextBox();
-            this.pedidoBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.fecha_HoraDateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.nombreClienteTextBox = new System.Windows.Forms.TextBox();
             this.p_IdTextBox = new System.Windows.Forms.TextBox();
             this.precio_HTextBox = new System.Windows.Forms.TextBox();
             this.pedidoDataGridView = new System.Windows.Forms.DataGridView();
+            this.Btn_GClientes = new System.Windows.Forms.Button();
+            this.Btn_Prueba = new System.Windows.Forms.Button();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clienteBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dataGridViewTextBoxColumn27 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn28 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn29 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pedidoBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dataGridViewTextBoxColumn21 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn22 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn23 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -174,7 +154,28 @@
             this.dataGridViewTextBoxColumn25 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn26 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Usuario = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Btn_GClientes = new System.Windows.Forms.Button();
+            this.dataGridViewTextBoxColumn16 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn17 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn18 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn19 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn20 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.productoBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.historialVentaBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.usuarioBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             cuentaLabel = new System.Windows.Forms.Label();
             nombreCompletoLabel = new System.Windows.Forms.Label();
             passwordLabel = new System.Windows.Forms.Label();
@@ -200,15 +201,12 @@
             ciLabel = new System.Windows.Forms.Label();
             nombreCompletoLabel1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.DGB_Usuario)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.usuarioBindingSource)).BeginInit();
             this.GroupBox_usuario.SuspendLayout();
             this.Panel_HV.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.historialVentaDataGridView)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.historialVentaBindingSource)).BeginInit();
             this.Panel_Producto.SuspendLayout();
             this.groupBoxverInProducto.SuspendLayout();
             this.groupBox_Atri_Producto.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.productoBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.productoDataGridView)).BeginInit();
             this.Panel_HeladoIv.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.heladoDataGridView)).BeginInit();
@@ -218,11 +216,14 @@
             this.Panel_Pedido.SuspendLayout();
             this.Panel_Cliente.SuspendLayout();
             this.groupBox_Cliente.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.clienteBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.clienteDataGridView)).BeginInit();
             this.groupBox_Pedido.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pedidoBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pedidoDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.clienteBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pedidoBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.productoBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.historialVentaBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.usuarioBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // cuentaLabel
@@ -624,42 +625,6 @@
             this.DGB_Usuario.Size = new System.Drawing.Size(671, 524);
             this.DGB_Usuario.TabIndex = 9;
             // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "Cuenta";
-            this.dataGridViewTextBoxColumn1.HeaderText = "Cuenta";
-            this.dataGridViewTextBoxColumn1.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.Width = 125;
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "Password";
-            this.dataGridViewTextBoxColumn2.HeaderText = "Password";
-            this.dataGridViewTextBoxColumn2.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.Width = 125;
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "NombreCompleto";
-            this.dataGridViewTextBoxColumn3.HeaderText = "NombreCompleto";
-            this.dataGridViewTextBoxColumn3.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            this.dataGridViewTextBoxColumn3.Width = 125;
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.DataPropertyName = "TipoUsuario";
-            this.dataGridViewTextBoxColumn4.HeaderText = "TipoUsuario";
-            this.dataGridViewTextBoxColumn4.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            this.dataGridViewTextBoxColumn4.Width = 125;
-            // 
-            // usuarioBindingSource
-            // 
-            this.usuarioBindingSource.DataSource = typeof(HeladosLDSisInf.Models.Usuario);
-            // 
             // GroupBox_usuario
             // 
             this.GroupBox_usuario.BackColor = System.Drawing.Color.Transparent;
@@ -968,42 +933,6 @@
             this.historialVentaDataGridView.Size = new System.Drawing.Size(700, 478);
             this.historialVentaDataGridView.TabIndex = 0;
             // 
-            // dataGridViewTextBoxColumn5
-            // 
-            this.dataGridViewTextBoxColumn5.DataPropertyName = "V_Id";
-            this.dataGridViewTextBoxColumn5.HeaderText = "V_Id";
-            this.dataGridViewTextBoxColumn5.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            this.dataGridViewTextBoxColumn5.Width = 125;
-            // 
-            // dataGridViewTextBoxColumn6
-            // 
-            this.dataGridViewTextBoxColumn6.DataPropertyName = "Ganancia";
-            this.dataGridViewTextBoxColumn6.HeaderText = "Ganancia";
-            this.dataGridViewTextBoxColumn6.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
-            this.dataGridViewTextBoxColumn6.Width = 125;
-            // 
-            // dataGridViewTextBoxColumn7
-            // 
-            this.dataGridViewTextBoxColumn7.DataPropertyName = "V_Desc";
-            this.dataGridViewTextBoxColumn7.HeaderText = "V_Desc";
-            this.dataGridViewTextBoxColumn7.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
-            this.dataGridViewTextBoxColumn7.Width = 125;
-            // 
-            // dataGridViewTextBoxColumn8
-            // 
-            this.dataGridViewTextBoxColumn8.DataPropertyName = "FechaHora";
-            this.dataGridViewTextBoxColumn8.HeaderText = "FechaHora";
-            this.dataGridViewTextBoxColumn8.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
-            this.dataGridViewTextBoxColumn8.Width = 125;
-            // 
-            // historialVentaBindingSource
-            // 
-            this.historialVentaBindingSource.DataSource = typeof(HeladosLDSisInf.Models.HistorialVenta);
-            // 
             // Panel_Producto
             // 
             this.Panel_Producto.BackColor = System.Drawing.Color.Transparent;
@@ -1087,10 +1016,6 @@
             this.cantidadTextBox.Name = "cantidadTextBox";
             this.cantidadTextBox.Size = new System.Drawing.Size(136, 22);
             this.cantidadTextBox.TabIndex = 1;
-            // 
-            // productoBindingSource
-            // 
-            this.productoBindingSource.DataSource = typeof(HeladosLDSisInf.Models.Producto);
             // 
             // idTextBox
             // 
@@ -1192,62 +1117,6 @@
             this.productoDataGridView.Size = new System.Drawing.Size(803, 487);
             this.productoDataGridView.TabIndex = 0;
             // 
-            // dataGridViewTextBoxColumn9
-            // 
-            this.dataGridViewTextBoxColumn9.DataPropertyName = "Id";
-            this.dataGridViewTextBoxColumn9.HeaderText = "Id";
-            this.dataGridViewTextBoxColumn9.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
-            this.dataGridViewTextBoxColumn9.Width = 125;
-            // 
-            // dataGridViewTextBoxColumn10
-            // 
-            this.dataGridViewTextBoxColumn10.DataPropertyName = "Nom_Producto";
-            this.dataGridViewTextBoxColumn10.HeaderText = "Nom_Producto";
-            this.dataGridViewTextBoxColumn10.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
-            this.dataGridViewTextBoxColumn10.Width = 125;
-            // 
-            // dataGridViewTextBoxColumn11
-            // 
-            this.dataGridViewTextBoxColumn11.DataPropertyName = "Tipo_Envase";
-            this.dataGridViewTextBoxColumn11.HeaderText = "Tipo_Envase";
-            this.dataGridViewTextBoxColumn11.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
-            this.dataGridViewTextBoxColumn11.Width = 125;
-            // 
-            // dataGridViewTextBoxColumn12
-            // 
-            this.dataGridViewTextBoxColumn12.DataPropertyName = "Tipo_Unidad";
-            this.dataGridViewTextBoxColumn12.HeaderText = "Tipo_Unidad";
-            this.dataGridViewTextBoxColumn12.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn12.Name = "dataGridViewTextBoxColumn12";
-            this.dataGridViewTextBoxColumn12.Width = 125;
-            // 
-            // dataGridViewTextBoxColumn13
-            // 
-            this.dataGridViewTextBoxColumn13.DataPropertyName = "PrecioU";
-            this.dataGridViewTextBoxColumn13.HeaderText = "PrecioU";
-            this.dataGridViewTextBoxColumn13.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn13.Name = "dataGridViewTextBoxColumn13";
-            this.dataGridViewTextBoxColumn13.Width = 125;
-            // 
-            // dataGridViewTextBoxColumn14
-            // 
-            this.dataGridViewTextBoxColumn14.DataPropertyName = "Cantidad";
-            this.dataGridViewTextBoxColumn14.HeaderText = "Cantidad";
-            this.dataGridViewTextBoxColumn14.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn14.Name = "dataGridViewTextBoxColumn14";
-            this.dataGridViewTextBoxColumn14.Width = 125;
-            // 
-            // dataGridViewTextBoxColumn15
-            // 
-            this.dataGridViewTextBoxColumn15.DataPropertyName = "PrecioT";
-            this.dataGridViewTextBoxColumn15.HeaderText = "PrecioT";
-            this.dataGridViewTextBoxColumn15.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn15.Name = "dataGridViewTextBoxColumn15";
-            this.dataGridViewTextBoxColumn15.Width = 125;
-            // 
             // Panel_HeladoIv
             // 
             this.Panel_HeladoIv.BackColor = System.Drawing.Color.Transparent;
@@ -1290,46 +1159,6 @@
             this.heladoDataGridView.RowTemplate.Height = 24;
             this.heladoDataGridView.Size = new System.Drawing.Size(684, 522);
             this.heladoDataGridView.TabIndex = 1;
-            // 
-            // dataGridViewTextBoxColumn16
-            // 
-            this.dataGridViewTextBoxColumn16.DataPropertyName = "Id";
-            this.dataGridViewTextBoxColumn16.HeaderText = "Id";
-            this.dataGridViewTextBoxColumn16.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn16.Name = "dataGridViewTextBoxColumn16";
-            this.dataGridViewTextBoxColumn16.Width = 125;
-            // 
-            // dataGridViewTextBoxColumn17
-            // 
-            this.dataGridViewTextBoxColumn17.DataPropertyName = "Sabor_Recipiente";
-            this.dataGridViewTextBoxColumn17.HeaderText = "Sabor_Recipiente";
-            this.dataGridViewTextBoxColumn17.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn17.Name = "dataGridViewTextBoxColumn17";
-            this.dataGridViewTextBoxColumn17.Width = 125;
-            // 
-            // dataGridViewTextBoxColumn18
-            // 
-            this.dataGridViewTextBoxColumn18.DataPropertyName = "Cantidad_P";
-            this.dataGridViewTextBoxColumn18.HeaderText = "Cantidad_P";
-            this.dataGridViewTextBoxColumn18.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn18.Name = "dataGridViewTextBoxColumn18";
-            this.dataGridViewTextBoxColumn18.Width = 125;
-            // 
-            // dataGridViewTextBoxColumn19
-            // 
-            this.dataGridViewTextBoxColumn19.DataPropertyName = "Precio_Venta";
-            this.dataGridViewTextBoxColumn19.HeaderText = "Precio_Venta";
-            this.dataGridViewTextBoxColumn19.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn19.Name = "dataGridViewTextBoxColumn19";
-            this.dataGridViewTextBoxColumn19.Width = 125;
-            // 
-            // dataGridViewTextBoxColumn20
-            // 
-            this.dataGridViewTextBoxColumn20.DataPropertyName = "Pedido";
-            this.dataGridViewTextBoxColumn20.HeaderText = "Pedido";
-            this.dataGridViewTextBoxColumn20.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn20.Name = "dataGridViewTextBoxColumn20";
-            this.dataGridViewTextBoxColumn20.Width = 125;
             // 
             // heladoBindingSource
             // 
@@ -1467,7 +1296,7 @@
             this.Panel_Cliente.Controls.Add(this.btn_EditarCliente);
             this.Panel_Cliente.Controls.Add(this.groupBox_Cliente);
             this.Panel_Cliente.Controls.Add(this.clienteDataGridView);
-            this.Panel_Cliente.ForeColor = System.Drawing.Color.Black;
+            this.Panel_Cliente.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.Panel_Cliente.Location = new System.Drawing.Point(0, 0);
             this.Panel_Cliente.Name = "Panel_Cliente";
             this.Panel_Cliente.Size = new System.Drawing.Size(1207, 590);
@@ -1572,10 +1401,6 @@
             this.c_IdTextBox.Size = new System.Drawing.Size(145, 22);
             this.c_IdTextBox.TabIndex = 1;
             // 
-            // clienteBindingSource
-            // 
-            this.clienteBindingSource.DataSource = typeof(HeladosLDSisInf.Models.Cliente);
-            // 
             // ciTextBox
             // 
             this.ciTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.clienteBindingSource, "Ci", true));
@@ -1607,30 +1432,6 @@
             this.clienteDataGridView.RowTemplate.Height = 24;
             this.clienteDataGridView.Size = new System.Drawing.Size(508, 521);
             this.clienteDataGridView.TabIndex = 0;
-            // 
-            // dataGridViewTextBoxColumn27
-            // 
-            this.dataGridViewTextBoxColumn27.DataPropertyName = "C_Id";
-            this.dataGridViewTextBoxColumn27.HeaderText = "C_Id";
-            this.dataGridViewTextBoxColumn27.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn27.Name = "dataGridViewTextBoxColumn27";
-            this.dataGridViewTextBoxColumn27.Width = 125;
-            // 
-            // dataGridViewTextBoxColumn28
-            // 
-            this.dataGridViewTextBoxColumn28.DataPropertyName = "NombreCompleto";
-            this.dataGridViewTextBoxColumn28.HeaderText = "NombreCompleto";
-            this.dataGridViewTextBoxColumn28.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn28.Name = "dataGridViewTextBoxColumn28";
-            this.dataGridViewTextBoxColumn28.Width = 125;
-            // 
-            // dataGridViewTextBoxColumn29
-            // 
-            this.dataGridViewTextBoxColumn29.DataPropertyName = "Ci";
-            this.dataGridViewTextBoxColumn29.HeaderText = "Ci";
-            this.dataGridViewTextBoxColumn29.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn29.Name = "dataGridViewTextBoxColumn29";
-            this.dataGridViewTextBoxColumn29.Width = 125;
             // 
             // button1
             // 
@@ -1673,10 +1474,6 @@
             this.descripcionTextBox.Name = "descripcionTextBox";
             this.descripcionTextBox.Size = new System.Drawing.Size(200, 22);
             this.descripcionTextBox.TabIndex = 1;
-            // 
-            // pedidoBindingSource
-            // 
-            this.pedidoBindingSource.DataSource = typeof(HeladosLDSisInf.Models.Pedido);
             // 
             // fecha_HoraDateTimePicker
             // 
@@ -1729,6 +1526,78 @@
             this.pedidoDataGridView.RowTemplate.Height = 24;
             this.pedidoDataGridView.Size = new System.Drawing.Size(794, 470);
             this.pedidoDataGridView.TabIndex = 0;
+            // 
+            // Btn_GClientes
+            // 
+            this.Btn_GClientes.BackColor = System.Drawing.Color.Maroon;
+            this.Btn_GClientes.FlatAppearance.BorderColor = System.Drawing.Color.Maroon;
+            this.Btn_GClientes.FlatAppearance.CheckedBackColor = System.Drawing.Color.Red;
+            this.Btn_GClientes.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.Btn_GClientes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.Btn_GClientes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_GClientes.Font = new System.Drawing.Font("Stencil", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_GClientes.ForeColor = System.Drawing.Color.White;
+            this.Btn_GClientes.Location = new System.Drawing.Point(12, 423);
+            this.Btn_GClientes.Name = "Btn_GClientes";
+            this.Btn_GClientes.Size = new System.Drawing.Size(169, 85);
+            this.Btn_GClientes.TabIndex = 20;
+            this.Btn_GClientes.Text = "GESTIONAR CLIENTES";
+            this.Btn_GClientes.UseVisualStyleBackColor = false;
+            this.Btn_GClientes.Click += new System.EventHandler(this.Btn_GClientes_Click);
+            // 
+            // Btn_Prueba
+            // 
+            this.Btn_Prueba.BackColor = System.Drawing.Color.Maroon;
+            this.Btn_Prueba.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_Prueba.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_Prueba.ForeColor = System.Drawing.Color.White;
+            this.Btn_Prueba.Location = new System.Drawing.Point(288, 643);
+            this.Btn_Prueba.Name = "Btn_Prueba";
+            this.Btn_Prueba.Size = new System.Drawing.Size(147, 59);
+            this.Btn_Prueba.TabIndex = 21;
+            this.Btn_Prueba.Text = "BOTON DE PRUEBA";
+            this.Btn_Prueba.UseVisualStyleBackColor = false;
+            this.Btn_Prueba.Click += new System.EventHandler(this.Btn_Prueba_Click);
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "Cuenta";
+            this.dataGridViewTextBoxColumn1.HeaderText = "Cuenta";
+            this.dataGridViewTextBoxColumn1.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.Width = 125;
+            // 
+            // clienteBindingSource
+            // 
+            this.clienteBindingSource.DataSource = typeof(HeladosLDSisInf.Models.Cliente);
+            // 
+            // dataGridViewTextBoxColumn27
+            // 
+            this.dataGridViewTextBoxColumn27.DataPropertyName = "C_Id";
+            this.dataGridViewTextBoxColumn27.HeaderText = "C_Id";
+            this.dataGridViewTextBoxColumn27.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn27.Name = "dataGridViewTextBoxColumn27";
+            this.dataGridViewTextBoxColumn27.Width = 125;
+            // 
+            // dataGridViewTextBoxColumn28
+            // 
+            this.dataGridViewTextBoxColumn28.DataPropertyName = "NombreCompleto";
+            this.dataGridViewTextBoxColumn28.HeaderText = "NombreCompleto";
+            this.dataGridViewTextBoxColumn28.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn28.Name = "dataGridViewTextBoxColumn28";
+            this.dataGridViewTextBoxColumn28.Width = 125;
+            // 
+            // dataGridViewTextBoxColumn29
+            // 
+            this.dataGridViewTextBoxColumn29.DataPropertyName = "Ci";
+            this.dataGridViewTextBoxColumn29.HeaderText = "Ci";
+            this.dataGridViewTextBoxColumn29.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn29.Name = "dataGridViewTextBoxColumn29";
+            this.dataGridViewTextBoxColumn29.Width = 125;
+            // 
+            // pedidoBindingSource
+            // 
+            this.pedidoBindingSource.DataSource = typeof(HeladosLDSisInf.Models.Pedido);
             // 
             // dataGridViewTextBoxColumn21
             // 
@@ -1786,23 +1655,169 @@
             this.Usuario.Name = "Usuario";
             this.Usuario.Width = 125;
             // 
-            // Btn_GClientes
+            // dataGridViewTextBoxColumn16
             // 
-            this.Btn_GClientes.BackColor = System.Drawing.Color.Maroon;
-            this.Btn_GClientes.FlatAppearance.BorderColor = System.Drawing.Color.Maroon;
-            this.Btn_GClientes.FlatAppearance.CheckedBackColor = System.Drawing.Color.Red;
-            this.Btn_GClientes.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.Btn_GClientes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.Btn_GClientes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btn_GClientes.Font = new System.Drawing.Font("Stencil", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_GClientes.ForeColor = System.Drawing.Color.White;
-            this.Btn_GClientes.Location = new System.Drawing.Point(12, 423);
-            this.Btn_GClientes.Name = "Btn_GClientes";
-            this.Btn_GClientes.Size = new System.Drawing.Size(169, 85);
-            this.Btn_GClientes.TabIndex = 20;
-            this.Btn_GClientes.Text = "GESTIONAR CLIENTES";
-            this.Btn_GClientes.UseVisualStyleBackColor = false;
-            this.Btn_GClientes.Click += new System.EventHandler(this.Btn_GClientes_Click);
+            this.dataGridViewTextBoxColumn16.DataPropertyName = "Id";
+            this.dataGridViewTextBoxColumn16.HeaderText = "Id";
+            this.dataGridViewTextBoxColumn16.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn16.Name = "dataGridViewTextBoxColumn16";
+            this.dataGridViewTextBoxColumn16.Width = 125;
+            // 
+            // dataGridViewTextBoxColumn17
+            // 
+            this.dataGridViewTextBoxColumn17.DataPropertyName = "Sabor_Recipiente";
+            this.dataGridViewTextBoxColumn17.HeaderText = "Sabor_Recipiente";
+            this.dataGridViewTextBoxColumn17.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn17.Name = "dataGridViewTextBoxColumn17";
+            this.dataGridViewTextBoxColumn17.Width = 125;
+            // 
+            // dataGridViewTextBoxColumn18
+            // 
+            this.dataGridViewTextBoxColumn18.DataPropertyName = "Cantidad_P";
+            this.dataGridViewTextBoxColumn18.HeaderText = "Cantidad_P";
+            this.dataGridViewTextBoxColumn18.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn18.Name = "dataGridViewTextBoxColumn18";
+            this.dataGridViewTextBoxColumn18.Width = 125;
+            // 
+            // dataGridViewTextBoxColumn19
+            // 
+            this.dataGridViewTextBoxColumn19.DataPropertyName = "Precio_Venta";
+            this.dataGridViewTextBoxColumn19.HeaderText = "Precio_Venta";
+            this.dataGridViewTextBoxColumn19.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn19.Name = "dataGridViewTextBoxColumn19";
+            this.dataGridViewTextBoxColumn19.Width = 125;
+            // 
+            // dataGridViewTextBoxColumn20
+            // 
+            this.dataGridViewTextBoxColumn20.DataPropertyName = "Pedido";
+            this.dataGridViewTextBoxColumn20.HeaderText = "Pedido";
+            this.dataGridViewTextBoxColumn20.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn20.Name = "dataGridViewTextBoxColumn20";
+            this.dataGridViewTextBoxColumn20.Width = 125;
+            // 
+            // productoBindingSource
+            // 
+            this.productoBindingSource.DataSource = typeof(HeladosLDSisInf.Models.Producto);
+            // 
+            // dataGridViewTextBoxColumn9
+            // 
+            this.dataGridViewTextBoxColumn9.DataPropertyName = "Id";
+            this.dataGridViewTextBoxColumn9.HeaderText = "Id";
+            this.dataGridViewTextBoxColumn9.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
+            this.dataGridViewTextBoxColumn9.Width = 125;
+            // 
+            // dataGridViewTextBoxColumn10
+            // 
+            this.dataGridViewTextBoxColumn10.DataPropertyName = "Nom_Producto";
+            this.dataGridViewTextBoxColumn10.HeaderText = "Nom_Producto";
+            this.dataGridViewTextBoxColumn10.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
+            this.dataGridViewTextBoxColumn10.Width = 125;
+            // 
+            // dataGridViewTextBoxColumn11
+            // 
+            this.dataGridViewTextBoxColumn11.DataPropertyName = "Tipo_Envase";
+            this.dataGridViewTextBoxColumn11.HeaderText = "Tipo_Envase";
+            this.dataGridViewTextBoxColumn11.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
+            this.dataGridViewTextBoxColumn11.Width = 125;
+            // 
+            // dataGridViewTextBoxColumn12
+            // 
+            this.dataGridViewTextBoxColumn12.DataPropertyName = "Tipo_Unidad";
+            this.dataGridViewTextBoxColumn12.HeaderText = "Tipo_Unidad";
+            this.dataGridViewTextBoxColumn12.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn12.Name = "dataGridViewTextBoxColumn12";
+            this.dataGridViewTextBoxColumn12.Width = 125;
+            // 
+            // dataGridViewTextBoxColumn13
+            // 
+            this.dataGridViewTextBoxColumn13.DataPropertyName = "PrecioU";
+            this.dataGridViewTextBoxColumn13.HeaderText = "PrecioU";
+            this.dataGridViewTextBoxColumn13.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn13.Name = "dataGridViewTextBoxColumn13";
+            this.dataGridViewTextBoxColumn13.Width = 125;
+            // 
+            // dataGridViewTextBoxColumn14
+            // 
+            this.dataGridViewTextBoxColumn14.DataPropertyName = "Cantidad";
+            this.dataGridViewTextBoxColumn14.HeaderText = "Cantidad";
+            this.dataGridViewTextBoxColumn14.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn14.Name = "dataGridViewTextBoxColumn14";
+            this.dataGridViewTextBoxColumn14.Width = 125;
+            // 
+            // dataGridViewTextBoxColumn15
+            // 
+            this.dataGridViewTextBoxColumn15.DataPropertyName = "PrecioT";
+            this.dataGridViewTextBoxColumn15.HeaderText = "PrecioT";
+            this.dataGridViewTextBoxColumn15.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn15.Name = "dataGridViewTextBoxColumn15";
+            this.dataGridViewTextBoxColumn15.Width = 125;
+            // 
+            // dataGridViewTextBoxColumn5
+            // 
+            this.dataGridViewTextBoxColumn5.DataPropertyName = "V_Id";
+            this.dataGridViewTextBoxColumn5.HeaderText = "V_Id";
+            this.dataGridViewTextBoxColumn5.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            this.dataGridViewTextBoxColumn5.Width = 125;
+            // 
+            // dataGridViewTextBoxColumn6
+            // 
+            this.dataGridViewTextBoxColumn6.DataPropertyName = "Ganancia";
+            this.dataGridViewTextBoxColumn6.HeaderText = "Ganancia";
+            this.dataGridViewTextBoxColumn6.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            this.dataGridViewTextBoxColumn6.Width = 125;
+            // 
+            // dataGridViewTextBoxColumn7
+            // 
+            this.dataGridViewTextBoxColumn7.DataPropertyName = "V_Desc";
+            this.dataGridViewTextBoxColumn7.HeaderText = "V_Desc";
+            this.dataGridViewTextBoxColumn7.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
+            this.dataGridViewTextBoxColumn7.Width = 125;
+            // 
+            // dataGridViewTextBoxColumn8
+            // 
+            this.dataGridViewTextBoxColumn8.DataPropertyName = "FechaHora";
+            this.dataGridViewTextBoxColumn8.HeaderText = "FechaHora";
+            this.dataGridViewTextBoxColumn8.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
+            this.dataGridViewTextBoxColumn8.Width = 125;
+            // 
+            // historialVentaBindingSource
+            // 
+            this.historialVentaBindingSource.DataSource = typeof(HeladosLDSisInf.Models.HistorialVenta);
+            // 
+            // usuarioBindingSource
+            // 
+            this.usuarioBindingSource.DataSource = typeof(HeladosLDSisInf.Models.Usuario);
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "Password";
+            this.dataGridViewTextBoxColumn2.HeaderText = "Password";
+            this.dataGridViewTextBoxColumn2.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.Width = 125;
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "NombreCompleto";
+            this.dataGridViewTextBoxColumn3.HeaderText = "NombreCompleto";
+            this.dataGridViewTextBoxColumn3.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.Width = 125;
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "TipoUsuario";
+            this.dataGridViewTextBoxColumn4.HeaderText = "TipoUsuario";
+            this.dataGridViewTextBoxColumn4.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            this.dataGridViewTextBoxColumn4.Width = 125;
             // 
             // Frm_Sistema
             // 
@@ -1810,6 +1825,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::HeladosLDSisInf.Properties.Resources.FRmproductopantalla;
             this.ClientSize = new System.Drawing.Size(1405, 714);
+            this.Controls.Add(this.Btn_Prueba);
             this.Controls.Add(this.Btn_GClientes);
             this.Controls.Add(this.Panel_Pedido);
             this.Controls.Add(this.Panel_HeladoIv);
@@ -1836,19 +1852,16 @@
             this.Text = "Frm_Sistema";
             this.Load += new System.EventHandler(this.Frm_Sistema_Load);
             ((System.ComponentModel.ISupportInitialize)(this.DGB_Usuario)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.usuarioBindingSource)).EndInit();
             this.GroupBox_usuario.ResumeLayout(false);
             this.GroupBox_usuario.PerformLayout();
             this.Panel_HV.ResumeLayout(false);
             this.Panel_HV.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.historialVentaDataGridView)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.historialVentaBindingSource)).EndInit();
             this.Panel_Producto.ResumeLayout(false);
             this.groupBoxverInProducto.ResumeLayout(false);
             this.groupBoxverInProducto.PerformLayout();
             this.groupBox_Atri_Producto.ResumeLayout(false);
             this.groupBox_Atri_Producto.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.productoBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.productoDataGridView)).EndInit();
             this.Panel_HeladoIv.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.heladoDataGridView)).EndInit();
@@ -1862,12 +1875,15 @@
             this.Panel_Cliente.PerformLayout();
             this.groupBox_Cliente.ResumeLayout(false);
             this.groupBox_Cliente.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.clienteBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.clienteDataGridView)).EndInit();
             this.groupBox_Pedido.ResumeLayout(false);
             this.groupBox_Pedido.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pedidoBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pedidoDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.clienteBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pedidoBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.productoBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.historialVentaBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.usuarioBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1996,5 +2012,6 @@
         private System.Windows.Forms.Button btn_AgregarCliente;
         private System.Windows.Forms.Button Btn_CancelarCliente;
         private System.Windows.Forms.TextBox txt_BuscarCliente;
+        private System.Windows.Forms.Button Btn_Prueba;
     }
 }
