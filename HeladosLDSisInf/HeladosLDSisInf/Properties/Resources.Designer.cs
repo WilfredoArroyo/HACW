@@ -93,6 +93,16 @@ namespace HeladosLDSisInf.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap IconoLogin {
+            get {
+                object obj = ResourceManager.GetObject("IconoLogin", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap JUEVES {
             get {
                 object obj = ResourceManager.GetObject("JUEVES", resourceCulture);
@@ -126,6 +136,86 @@ namespace HeladosLDSisInf.Properties {
         internal static System.Drawing.Bitmap promocion_martes_miercoles {
             get {
                 object obj = ResourceManager.GetObject("promocion_martes_miercoles", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Sabor_banana {
+            get {
+                object obj = ResourceManager.GetObject("Sabor banana", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Sabor_Chocolate {
+            get {
+                object obj = ResourceManager.GetObject("Sabor Chocolate", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Sabor_Coco {
+            get {
+                object obj = ResourceManager.GetObject("Sabor Coco", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Sabor_fresa {
+            get {
+                object obj = ResourceManager.GetObject("Sabor fresa", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Sabor_frutilla {
+            get {
+                object obj = ResourceManager.GetObject("Sabor frutilla", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap sabor_limon {
+            get {
+                object obj = ResourceManager.GetObject("sabor limon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap sabor_maracuya {
+            get {
+                object obj = ResourceManager.GetObject("sabor maracuya", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap sabor_oreo {
+            get {
+                object obj = ResourceManager.GetObject("sabor oreo", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

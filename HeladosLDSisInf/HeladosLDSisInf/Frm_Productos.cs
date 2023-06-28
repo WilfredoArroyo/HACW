@@ -12,13 +12,12 @@ namespace HeladosLDSisInf
 {
     public partial class Frm_Productos : Form
     {
-        private string txtNombre;
         public string NombreF { get; set; }
         public Frm_Productos(string nom)
         {
             InitializeComponent();
             NombreF = nom;
-            TimerProducto.Interval = 5000;
+            TimerProducto.Interval = 12000;
             TimerProducto.Tick += TimerProducto_Tick;
             TimerProducto.Start();
 
@@ -28,15 +27,15 @@ namespace HeladosLDSisInf
         }
         private void Btn_Salir_Click(object sender, EventArgs e)
         {
-            Frm_Inicio Ins = new Frm_Inicio();   
+            TimerProducto.Stop();
+            Frm_Inicio Ins =new Frm_Inicio();   
             Ins.Show(); 
             this.Hide();
         }
 
         private void Frm_Productos_Load(object sender, EventArgs e)
         {
-            Label_Bienvenida.Text = "Hola bienvenido "+NombreF;
-            lb_H1.Visible = false;
+            lbl_Nombre.Text ="Hola Bienvenido "+NombreF;
         }
 
         private void Frm_Productos_FormClosing(object sender, FormClosingEventArgs e)
@@ -47,6 +46,7 @@ namespace HeladosLDSisInf
         private void Btn_Helados_Click(object sender, EventArgs e)
         {
             Panel_Helados.Visible = true;
+            Panel_Sabores.Visible = false;
         }
 
         private void Btn_Helados_MouseClick(object sender, MouseEventArgs e)
@@ -84,16 +84,19 @@ namespace HeladosLDSisInf
         private void Btn_sabor_Click(object sender, EventArgs e)
         {
             Panel_Helados.Visible = false;
+            Panel_Sabores.Visible = true;
         }
 
         private void Btn_Recipiente_Click(object sender, EventArgs e)
         {
             Panel_Helados.Visible = false;
+            Panel_Sabores.Visible = false;
         }
 
         private void Btn_Extras_Click(object sender, EventArgs e)
         {
             Panel_Helados.Visible = false;
+            Panel_Sabores.Visible = false;
         }
 
         private void Btn_Helado1P_Click(object sender, EventArgs e)
@@ -102,8 +105,7 @@ namespace HeladosLDSisInf
             if (s == 0)
             { Btn_Helado1P.Enabled = false;
             Btn_Helado1P.Text = "X";
-                Btn_Helado1P.ForeColor = Color.Red;
-                lb_H1.Visible = true;   
+                Btn_Helado1P.ForeColor = Color.Red;   
             }
         }
 
@@ -115,11 +117,9 @@ namespace HeladosLDSisInf
         private void TimerProducto_Tick(object sender, EventArgs e)
         {
             TimerProducto.Stop();
-            Hide();
-
-
-            Frm_Inicio In = new Frm_Inicio();
-            In.Show();
+            Frm_Inicio form =Frm_Inicio.GetInstance();
+            form.Show();
+            this.Hide();
         }
         
         private void Frm_Productos_KeyDown(object sender, KeyEventArgs e)
@@ -132,6 +132,17 @@ namespace HeladosLDSisInf
         {
             TimerProducto.Stop();
             TimerProducto.Start();
+        }
+        protected override void OnDeactivate(EventArgs e)
+        {
+            base.OnDeactivate(e);
+            // Aquí puedes detener la ejecución de eventos o funciones mientras el formulario está oculto
+        }
+
+        protected override void OnActivated(EventArgs e)
+        {
+            base.OnActivated(e);
+            // Aquí puedes reactivar los eventos o funciones cuando vuelvas al formulario
         }
     }
 }

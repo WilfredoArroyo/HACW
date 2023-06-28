@@ -14,11 +14,20 @@ namespace HeladosLDSisInf
 {
     public partial class Frm_Inicio : Form
     {
+        public static Frm_Inicio instance;
         public Frm_Inicio()
         {
             InitializeComponent();
         }
 
+        public static Frm_Inicio GetInstance()
+        {
+            if (instance == null)
+            {
+                instance = new Frm_Inicio();
+            }
+            return instance;
+        }
         private void button1_Click(object sender, EventArgs e)
         {
             Btn_Siguiente.Visible = true;
@@ -38,12 +47,12 @@ namespace HeladosLDSisInf
             //truco para convertir (mapear) las clases persistentes a tablas en base de datos
             HeladeriaContext context = new HeladeriaContext();
 
-            context.Usuario.ToList();
+            /*context.Usuario.ToList();
             context.Pedido.ToList();
             context.Producto.ToList();
             context.Helado.ToList();
             context.HistorialVenta.ToList();
-            context.Cliente.ToList();
+            context.Cliente.ToList();*/
         }
         private void txt_Nom_TextChanged_1(object sender, EventArgs e)
         {

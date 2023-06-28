@@ -56,6 +56,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Context\HeladeriaContext.cs" />
+    <Compile Include="Controllers\HIstorialVentasController.cs" />
+    <Compile Include="Controllers\ProductoController.cs" />
+    <Compile Include="Controllers\UsuarioController.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -69,6 +72,12 @@
     </Compile>
     <Compile Include="FrmLogin_Adm.Designer.cs">
       <DependentUpon>FrmLogin_Adm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Administrador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Administrador.Designer.cs">
+      <DependentUpon>Frm_Administrador.cs</DependentUpon>
     </Compile>
     <Compile Include="Frm_Productos.cs">
       <SubType>Form</SubType>
@@ -91,6 +100,9 @@
     <EmbeddedResource Include="FrmLogin_Adm.resx">
       <DependentUpon>FrmLogin_Adm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Administrador.resx">
+      <DependentUpon>Frm_Administrador.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Frm_Productos.resx">
       <DependentUpon>Frm_Productos.cs</DependentUpon>
     </EmbeddedResource>
@@ -105,6 +117,8 @@
       <DesignTime>True</DesignTime>
     </Compile>
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\HeladosLDSisInf.Models.HistorialVenta.datasource" />
+    <None Include="Properties\DataSources\HeladosLDSisInf.Models.Usuario.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -140,7 +154,31 @@
     <None Include="Resources\promocion_martes_miercoles.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Controllers\" />
+    <None Include="Resources\IconoLogin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sabor banana.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sabor Chocolate.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sabor Coco.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sabor fresa.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sabor frutilla.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sabor limon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sabor maracuya.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sabor oreo.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

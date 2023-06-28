@@ -1,4 +1,5 @@
-﻿using System;
+﻿using HeladosLDSisInf.Controllers;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -23,7 +24,21 @@ namespace HeladosLDSisInf
 
         private void btn_ingresar_Click(object sender, EventArgs e)
         {
-            
+            UsuarioController usuarioC = new UsuarioController();
+            string cuenta=txt_Cuenta.Text;
+            string password=txt_Password.Text;
+            int Contador=usuarioC.Login(cuenta, password);
+
+            if (Contador==1 || Contador==2)
+            {
+                Frm_Sistema Frm_Adm = new Frm_Sistema(cuenta,Contador);
+                Frm_Adm.Show();
+                this.Hide();    
+            }
+            else
+            {
+                MessageBox.Show("Error! Cuenta o Pasword Incorrectos");
+            }
         }
     }
 }

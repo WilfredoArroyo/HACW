@@ -31,7 +31,6 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_Productos));
             this.Panel_Helados = new System.Windows.Forms.Panel();
-            this.lb_H1 = new System.Windows.Forms.Label();
             this.Btn_Helado3P = new System.Windows.Forms.Button();
             this.Btn_Helado2P = new System.Windows.Forms.Button();
             this.Btn_Helado1P = new System.Windows.Forms.Button();
@@ -40,35 +39,32 @@
             this.Btn_Helados = new System.Windows.Forms.Button();
             this.Btn_sabor = new System.Windows.Forms.Button();
             this.Btn_Recipiente = new System.Windows.Forms.Button();
-            this.Label_Bienvenida = new System.Windows.Forms.Label();
             this.TimerProducto = new System.Windows.Forms.Timer(this.components);
-            this.lbl_Bienvenida = new System.Windows.Forms.Label();
+            this.lbl_Nombre = new System.Windows.Forms.Label();
+            this.Panel_Sabores = new System.Windows.Forms.Panel();
+            this.button8 = new System.Windows.Forms.Button();
+            this.button7 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.btn_Banana = new System.Windows.Forms.Button();
             this.Panel_Helados.SuspendLayout();
+            this.Panel_Sabores.SuspendLayout();
             this.SuspendLayout();
             // 
             // Panel_Helados
             // 
             this.Panel_Helados.BackColor = System.Drawing.Color.Transparent;
             this.Panel_Helados.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Panel_Helados.Controls.Add(this.lb_H1);
             this.Panel_Helados.Controls.Add(this.Btn_Helado3P);
             this.Panel_Helados.Controls.Add(this.Btn_Helado2P);
             this.Panel_Helados.Controls.Add(this.Btn_Helado1P);
-            this.Panel_Helados.Location = new System.Drawing.Point(60, 171);
+            this.Panel_Helados.Location = new System.Drawing.Point(237, 77);
             this.Panel_Helados.Name = "Panel_Helados";
-            this.Panel_Helados.Size = new System.Drawing.Size(789, 396);
+            this.Panel_Helados.Size = new System.Drawing.Size(848, 543);
             this.Panel_Helados.TabIndex = 12;
-            // 
-            // lb_H1
-            // 
-            this.lb_H1.AutoSize = true;
-            this.lb_H1.Font = new System.Drawing.Font("Snap ITC", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_H1.ForeColor = System.Drawing.Color.White;
-            this.lb_H1.Location = new System.Drawing.Point(51, 298);
-            this.lb_H1.Name = "lb_H1";
-            this.lb_H1.Size = new System.Drawing.Size(184, 24);
-            this.lb_H1.TabIndex = 3;
-            this.lb_H1.Text = "Sin existencias";
             // 
             // Btn_Helado3P
             // 
@@ -80,7 +76,7 @@
             this.Btn_Helado3P.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.Btn_Helado3P.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
             this.Btn_Helado3P.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btn_Helado3P.Location = new System.Drawing.Point(532, 25);
+            this.Btn_Helado3P.Location = new System.Drawing.Point(516, 25);
             this.Btn_Helado3P.Name = "Btn_Helado3P";
             this.Btn_Helado3P.Size = new System.Drawing.Size(214, 309);
             this.Btn_Helado3P.TabIndex = 2;
@@ -125,9 +121,12 @@
             // 
             // Btn_Salir
             // 
-            this.Btn_Salir.BackColor = System.Drawing.Color.White;
+            this.Btn_Salir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.Btn_Salir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.Btn_Salir.Location = new System.Drawing.Point(894, 552);
+            this.Btn_Salir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_Salir.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_Salir.ForeColor = System.Drawing.Color.White;
+            this.Btn_Salir.Location = new System.Drawing.Point(1065, 635);
             this.Btn_Salir.Name = "Btn_Salir";
             this.Btn_Salir.Size = new System.Drawing.Size(138, 64);
             this.Btn_Salir.TabIndex = 7;
@@ -142,20 +141,20 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.Btn_Extras.BackColor = System.Drawing.Color.Maroon;
             this.Btn_Extras.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.Btn_Extras.FlatAppearance.BorderSize = 4;
             this.Btn_Extras.FlatAppearance.CheckedBackColor = System.Drawing.Color.White;
             this.Btn_Extras.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Red;
             this.Btn_Extras.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
             this.Btn_Extras.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_Extras.Font = new System.Drawing.Font("Kristen ITC", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Btn_Extras.ForeColor = System.Drawing.Color.White;
-            this.Btn_Extras.Location = new System.Drawing.Point(646, 57);
+            this.Btn_Extras.Location = new System.Drawing.Point(29, 374);
             this.Btn_Extras.Name = "Btn_Extras";
-            this.Btn_Extras.Size = new System.Drawing.Size(200, 81);
+            this.Btn_Extras.Size = new System.Drawing.Size(186, 74);
             this.Btn_Extras.TabIndex = 17;
             this.Btn_Extras.Text = "EXTRAS";
             this.Btn_Extras.UseVisualStyleBackColor = false;
             this.Btn_Extras.Click += new System.EventHandler(this.Btn_Extras_Click);
+            this.Btn_Extras.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Btn_Extras_MouseClick);
             // 
             // Btn_Helados
             // 
@@ -164,16 +163,15 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.Btn_Helados.BackColor = System.Drawing.Color.Maroon;
             this.Btn_Helados.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.Btn_Helados.FlatAppearance.BorderSize = 4;
             this.Btn_Helados.FlatAppearance.CheckedBackColor = System.Drawing.Color.White;
             this.Btn_Helados.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Red;
             this.Btn_Helados.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
             this.Btn_Helados.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_Helados.Font = new System.Drawing.Font("Kristen ITC", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Btn_Helados.ForeColor = System.Drawing.Color.White;
-            this.Btn_Helados.Location = new System.Drawing.Point(60, 57);
+            this.Btn_Helados.Location = new System.Drawing.Point(29, 146);
             this.Btn_Helados.Name = "Btn_Helados";
-            this.Btn_Helados.Size = new System.Drawing.Size(200, 81);
+            this.Btn_Helados.Size = new System.Drawing.Size(186, 77);
             this.Btn_Helados.TabIndex = 16;
             this.Btn_Helados.Text = "HELADOS";
             this.Btn_Helados.UseVisualStyleBackColor = false;
@@ -187,16 +185,15 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.Btn_sabor.BackColor = System.Drawing.Color.Maroon;
             this.Btn_sabor.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.Btn_sabor.FlatAppearance.BorderSize = 4;
             this.Btn_sabor.FlatAppearance.CheckedBackColor = System.Drawing.Color.White;
             this.Btn_sabor.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Red;
             this.Btn_sabor.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
             this.Btn_sabor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_sabor.Font = new System.Drawing.Font("Kristen ITC", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Btn_sabor.ForeColor = System.Drawing.Color.White;
-            this.Btn_sabor.Location = new System.Drawing.Point(253, 57);
+            this.Btn_sabor.Location = new System.Drawing.Point(29, 297);
             this.Btn_sabor.Name = "Btn_sabor";
-            this.Btn_sabor.Size = new System.Drawing.Size(200, 81);
+            this.Btn_sabor.Size = new System.Drawing.Size(186, 79);
             this.Btn_sabor.TabIndex = 15;
             this.Btn_sabor.Text = "SABORES";
             this.Btn_sabor.UseVisualStyleBackColor = false;
@@ -210,55 +207,141 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.Btn_Recipiente.BackColor = System.Drawing.Color.Maroon;
             this.Btn_Recipiente.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.Btn_Recipiente.FlatAppearance.BorderSize = 4;
             this.Btn_Recipiente.FlatAppearance.CheckedBackColor = System.Drawing.Color.White;
             this.Btn_Recipiente.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Red;
             this.Btn_Recipiente.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
             this.Btn_Recipiente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_Recipiente.Font = new System.Drawing.Font("Kristen ITC", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Btn_Recipiente.ForeColor = System.Drawing.Color.White;
-            this.Btn_Recipiente.Location = new System.Drawing.Point(450, 57);
+            this.Btn_Recipiente.Location = new System.Drawing.Point(29, 221);
             this.Btn_Recipiente.Name = "Btn_Recipiente";
-            this.Btn_Recipiente.Size = new System.Drawing.Size(200, 81);
+            this.Btn_Recipiente.Size = new System.Drawing.Size(186, 81);
             this.Btn_Recipiente.TabIndex = 14;
             this.Btn_Recipiente.Text = "RECIPIENTE";
             this.Btn_Recipiente.UseVisualStyleBackColor = false;
             this.Btn_Recipiente.Click += new System.EventHandler(this.Btn_Recipiente_Click);
-            this.Btn_Recipiente.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Btn_Extras_MouseClick);
-            // 
-            // Label_Bienvenida
-            // 
-            this.Label_Bienvenida.AutoSize = true;
-            this.Label_Bienvenida.BackColor = System.Drawing.Color.Transparent;
-            this.Label_Bienvenida.Font = new System.Drawing.Font("Imprint MT Shadow", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label_Bienvenida.ForeColor = System.Drawing.Color.White;
-            this.Label_Bienvenida.Location = new System.Drawing.Point(98, 19);
-            this.Label_Bienvenida.Name = "Label_Bienvenida";
-            this.Label_Bienvenida.Size = new System.Drawing.Size(0, 24);
-            this.Label_Bienvenida.TabIndex = 18;
+            this.Btn_Recipiente.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Btn_Recipiente_MouseClick);
             // 
             // TimerProducto
             // 
             this.TimerProducto.Interval = 10000;
             this.TimerProducto.Tick += new System.EventHandler(this.TimerProducto_Tick);
             // 
-            // lbl_Bienvenida
+            // lbl_Nombre
             // 
-            this.lbl_Bienvenida.AutoSize = true;
-            this.lbl_Bienvenida.Location = new System.Drawing.Point(68, 19);
-            this.lbl_Bienvenida.Name = "lbl_Bienvenida";
-            this.lbl_Bienvenida.Size = new System.Drawing.Size(0, 16);
-            this.lbl_Bienvenida.TabIndex = 19;
+            this.lbl_Nombre.AutoSize = true;
+            this.lbl_Nombre.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_Nombre.Font = new System.Drawing.Font("Lucida Fax", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Nombre.ForeColor = System.Drawing.Color.White;
+            this.lbl_Nombre.Location = new System.Drawing.Point(82, 18);
+            this.lbl_Nombre.Name = "lbl_Nombre";
+            this.lbl_Nombre.Size = new System.Drawing.Size(0, 23);
+            this.lbl_Nombre.TabIndex = 18;
+            // 
+            // Panel_Sabores
+            // 
+            this.Panel_Sabores.BackColor = System.Drawing.Color.Transparent;
+            this.Panel_Sabores.Controls.Add(this.button8);
+            this.Panel_Sabores.Controls.Add(this.button7);
+            this.Panel_Sabores.Controls.Add(this.button6);
+            this.Panel_Sabores.Controls.Add(this.button5);
+            this.Panel_Sabores.Controls.Add(this.button4);
+            this.Panel_Sabores.Controls.Add(this.button3);
+            this.Panel_Sabores.Controls.Add(this.button2);
+            this.Panel_Sabores.Controls.Add(this.btn_Banana);
+            this.Panel_Sabores.Location = new System.Drawing.Point(237, 77);
+            this.Panel_Sabores.Name = "Panel_Sabores";
+            this.Panel_Sabores.Size = new System.Drawing.Size(731, 543);
+            this.Panel_Sabores.TabIndex = 19;
+            // 
+            // button8
+            // 
+            this.button8.BackgroundImage = global::HeladosLDSisInf.Properties.Resources.Sabor_Chocolate;
+            this.button8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button8.Location = new System.Drawing.Point(536, 284);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(140, 137);
+            this.button8.TabIndex = 7;
+            this.button8.UseVisualStyleBackColor = true;
+            // 
+            // button7
+            // 
+            this.button7.BackgroundImage = global::HeladosLDSisInf.Properties.Resources.Sabor_Coco;
+            this.button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button7.Location = new System.Drawing.Point(208, 35);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(140, 134);
+            this.button7.TabIndex = 6;
+            this.button7.UseVisualStyleBackColor = true;
+            // 
+            // button6
+            // 
+            this.button6.BackgroundImage = global::HeladosLDSisInf.Properties.Resources.Sabor_fresa;
+            this.button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button6.Location = new System.Drawing.Point(362, 35);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(140, 134);
+            this.button6.TabIndex = 5;
+            this.button6.UseVisualStyleBackColor = true;
+            // 
+            // button5
+            // 
+            this.button5.BackgroundImage = global::HeladosLDSisInf.Properties.Resources.Sabor_frutilla;
+            this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button5.Location = new System.Drawing.Point(536, 35);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(140, 134);
+            this.button5.TabIndex = 4;
+            this.button5.UseVisualStyleBackColor = true;
+            // 
+            // button4
+            // 
+            this.button4.BackgroundImage = global::HeladosLDSisInf.Properties.Resources.sabor_oreo;
+            this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button4.Location = new System.Drawing.Point(362, 284);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(140, 137);
+            this.button4.TabIndex = 3;
+            this.button4.UseVisualStyleBackColor = true;
+            // 
+            // button3
+            // 
+            this.button3.BackgroundImage = global::HeladosLDSisInf.Properties.Resources.sabor_maracuya;
+            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button3.Location = new System.Drawing.Point(208, 284);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(140, 137);
+            this.button3.TabIndex = 2;
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            this.button2.BackgroundImage = global::HeladosLDSisInf.Properties.Resources.sabor_limon;
+            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button2.Location = new System.Drawing.Point(41, 284);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(140, 137);
+            this.button2.TabIndex = 1;
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // btn_Banana
+            // 
+            this.btn_Banana.BackgroundImage = global::HeladosLDSisInf.Properties.Resources.Sabor_banana;
+            this.btn_Banana.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btn_Banana.Location = new System.Drawing.Point(41, 35);
+            this.btn_Banana.Name = "btn_Banana";
+            this.btn_Banana.Size = new System.Drawing.Size(140, 134);
+            this.btn_Banana.TabIndex = 0;
+            this.btn_Banana.UseVisualStyleBackColor = true;
             // 
             // Frm_Productos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::HeladosLDSisInf.Properties.Resources.FRm_producto_pantalla;
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1102, 649);
-            this.Controls.Add(this.lbl_Bienvenida);
-            this.Controls.Add(this.Label_Bienvenida);
+            this.ClientSize = new System.Drawing.Size(1237, 723);
+            this.Controls.Add(this.Panel_Sabores);
+            this.Controls.Add(this.lbl_Nombre);
             this.Controls.Add(this.Btn_Extras);
             this.Controls.Add(this.Btn_Helados);
             this.Controls.Add(this.Btn_sabor);
@@ -271,11 +354,12 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Frm_Productos";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Frm_Productos_FormClosing);
+            this.Load += new System.EventHandler(this.Frm_Productos_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Frm_Productos_KeyDown);
             this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Frm_Productos_KeyPress);
             this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Frm_Productos_MouseMove);
             this.Panel_Helados.ResumeLayout(false);
-            this.Panel_Helados.PerformLayout();
+            this.Panel_Sabores.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -292,9 +376,16 @@
         private System.Windows.Forms.Button Btn_Helados;
         private System.Windows.Forms.Button Btn_sabor;
         private System.Windows.Forms.Button Btn_Recipiente;
-        private System.Windows.Forms.Label Label_Bienvenida;
-        private System.Windows.Forms.Label lb_H1;
         private System.Windows.Forms.Timer TimerProducto;
-        private System.Windows.Forms.Label lbl_Bienvenida;
+        private System.Windows.Forms.Label lbl_Nombre;
+        private System.Windows.Forms.Panel Panel_Sabores;
+        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btn_Banana;
     }
 }

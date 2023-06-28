@@ -12,8 +12,10 @@ namespace HeladosLDSisInf.Models
         [Key]
         public int V_Id { get; set; }
         public Decimal Ganancia { get; set;}
+        //Descripcion de venta
         public string V_Desc { get; set;}
-        //un historial de ventas tiene muchos pedidos 
+        //un historial de ventas tiene muchos pedidos
+        public DateTime FechaHora { get; set; }
         virtual public List<Pedido> Pedido { get; set; }   
     }
 }
