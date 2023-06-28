@@ -73,6 +73,16 @@ namespace HeladosLDSisInf.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap FRmproductopantalla {
+            get {
+                object obj = ResourceManager.GetObject("FRmproductopantalla", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap heladosImg2 {
             get {
                 object obj = ResourceManager.GetObject("heladosImg2", resourceCulture);

@@ -14,7 +14,12 @@ namespace HeladosLDSisInf
 {
     public partial class Frm_Sistema : Form
     {
+        ClienteController _clienteController = new ClienteController();
+        PedidoController _pedidoController= new PedidoController();
+        HeladoController _heladoController= new HeladoController();
         UsuarioController _usuarioController= new UsuarioController();
+        HIstorialVentasController _historialVController = new HIstorialVentasController();
+        ProductoController _productoController = new ProductoController();
         
         //si un usuario es nuevo
         bool _isNew = true;
@@ -48,6 +53,7 @@ namespace HeladosLDSisInf
             GroupBox_usuario.Visible = false;
             Btn_Nuevo.Visible = false;
             txt_Buscar.Visible = false;
+            usuarioBindingSource.DataSource = _usuarioController.GetAll();
         }
         private void Frm_Sistema_Load(object sender, EventArgs e)
         {
@@ -61,11 +67,21 @@ namespace HeladosLDSisInf
             Btn_Nuevo.Visible = false;
             txt_Buscar.Visible=false;
             Panel_HV.Visible = false;
+            Panel_Producto.Visible = false;
+            Panel_HeladoIv.Visible = false;
+            Panel_Pedido.Visible = false;
+            Panel_Cliente.Visible = true;
+            clienteBindingSource.DataSource = _clienteController.GetAll();
+            pedidoBindingSource.DataSource = _pedidoController.GetAll();
+            heladoBindingSource.DataSource = _heladoController.GetAll();
+            productoBindingSource.DataSource = _productoController.GetAll();
             usuarioBindingSource.DataSource = _usuarioController.GetAll();
+            historialVentaBindingSource.DataSource = _historialVController.GetAll();
             if (Contador==2)
             {
                Btn_HIstorialVentas.Visible = false;
-                Btn_GUsuario.Visible = false;   
+                Btn_GUsuario.Visible = false;
+                Panel_HeladoIv.Visible = false;
             }
         }
         //--------------------------------------------------------------------
@@ -88,6 +104,11 @@ namespace HeladosLDSisInf
             Btn_Pedidos.BackColor = Color.Maroon;
             //-----------------------------------------------------------------
             Panel_HV.Visible = false;
+            Panel_Producto.Visible = false;
+            Panel_HeladoIv.Visible = false;
+            Panel_Pedido.Visible = false;
+            Panel_Cliente.Visible = false;
+            usuarioBindingSource.DataSource = _usuarioController.GetAll();
         }
 
         private void Btn_InvProducto_Click(object sender, EventArgs e)
@@ -111,6 +132,11 @@ namespace HeladosLDSisInf
             Btn_Pedidos.BackColor = Color.Maroon;
             //------------------------------------------------------------
             Panel_HV.Visible = false;
+            Panel_Producto.Visible = true;
+            groupBoxverInProducto.Enabled = false;
+            Panel_HeladoIv.Visible = false;
+            Panel_Pedido.Visible = false;
+            productoBindingSource.DataSource = _productoController.GetAll();
         }
 
         private void Btn_InvHelado_Click(object sender, EventArgs e)
@@ -134,6 +160,12 @@ namespace HeladosLDSisInf
             Btn_Pedidos.BackColor = Color.Maroon;
             //-------------------------------------------------------------------------
             Panel_HV.Visible = false;
+            Panel_Producto.Visible = false;
+            Panel_HeladoIv.Visible = true;
+            groupBox_Helado.Enabled = false;
+            Panel_Pedido.Visible = false;
+            Panel_Cliente.Visible = false;
+            heladoBindingSource.DataSource = _heladoController.GetAll();
         }
 
         private void Btn_Pedidos_Click(object sender, EventArgs e)
@@ -157,6 +189,12 @@ namespace HeladosLDSisInf
             Btn_Pedidos.BackColor = Color.Crimson;
             //----------------------------------------------------------------------
             Panel_HV.Visible = false;
+            Panel_Producto.Visible = false;
+            Panel_HeladoIv.Visible = false;
+            Panel_Pedido.Visible = true;
+            groupBox_Pedido.Enabled = false;
+            Panel_Cliente.Visible = false;
+            pedidoBindingSource.DataSource = _pedidoController.GetAll();
         }
 
         private void Btn_HIstorialVentas_Click(object sender, EventArgs e)
@@ -170,6 +208,7 @@ namespace HeladosLDSisInf
             GroupBox_usuario.Visible = false;
             Btn_Nuevo.Visible = false;
             txt_Buscar.Visible = false;
+            txt_ganancia.Enabled = false;
             //-------------------------------------------------------------------------
 
             Btn_HIstorialVentas.BackColor = Color.Crimson;
@@ -180,6 +219,11 @@ namespace HeladosLDSisInf
             Btn_Pedidos.BackColor = Color.Maroon;
             //-------------------------------------------------------------------------
             Panel_HV.Visible = true;
+            Panel_Producto.Visible = false;
+            Panel_HeladoIv.Visible = false;
+            Panel_Pedido.Visible = false;
+            Panel_Cliente.Visible = false;
+            historialVentaBindingSource.DataSource = _historialVController.GetAll();
         }
         //--------------------------------------------------------------------
 
@@ -188,7 +232,7 @@ namespace HeladosLDSisInf
             //Desabilite los atributos (Textbox,Checkbox) para agregar o modificar un Usuario
             GroupBox_usuario.Enabled = false;
             //Elimina todo lo que se escribio en los atributos  (Textbox,Checkbox) del Usuario
-            usuarioBindingSource.CancelEdit();         
+            usuarioBindingSource.CancelEdit();
         }
 
         private void Btn_Guardar_Click(object sender, EventArgs e)
@@ -257,5 +301,124 @@ namespace HeladosLDSisInf
             //Actualice el DataGridView 
             usuarioBindingSource.DataSource = _usuarioController.GetAll();
         }
+        //-----------------------------------------------------------------
+        //todos los datos de historial de ventas 
+        private void Btn_GananciaTHV_Click(object sender, EventArgs e)
+        {
+
+            txt_ganancia.Text = "";
+            decimal GananciaT = _historialVController.GetAllGanancia();
+            txt_ganancia.Text =GananciaT.ToString();
+            usuarioBindingSource.DataSource = _usuarioController.GetAll();
+        }
+
+        private void Btn_BuscarHV_Click(object sender, EventArgs e)
+        {
+            DateTime Finicio =dataTime_InicioHV.Value;
+            DateTime Ffinal = dateTimeFinalHV.Value;
+            historialVentaBindingSource.DataSource = _historialVController.SearchHV(Finicio,Ffinal);
+        }
+
+        private void btn_BuscarDescHV_Click(object sender, EventArgs e)
+        {
+            string par = txt_BuscarDescHV.Text;
+            //Que en el DataGridView Muestre todos los usuarios que cumplan con el paramatro "par"
+            historialVentaBindingSource.DataSource = _historialVController.Search(par);
+        }
+
+        private void Btn_GananciaFDHv_Click(object sender, EventArgs e)
+        {
+            DateTime Finicio = dataTime_InicioHV.Value;
+            DateTime Ffinal = dateTimeFinalHV.Value;
+            txt_ganancia.Text = "";
+            decimal GananciaT = _historialVController.GetGananciaF(Finicio, Ffinal);
+            txt_ganancia.Text=GananciaT.ToString();
+            historialVentaBindingSource.DataSource = _historialVController.SearchHV(Finicio, Ffinal);
+        }
+
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            // de la clase Producto
+            //aumentar cantidad a un producto
+            var user = (Producto)productoBindingSource.Current;
+            groupBoxverInProducto.Enabled = true;
+            groupBox_Atri_Producto.Enabled = false;
+        }
+        private void AgregarCProducto(int Acantidad)
+        {
+            var Agregar = (Producto)productoBindingSource.Current;
+                _productoController.Update(Agregar,Acantidad);
+            //Desabilite los atributos (Textbox,Checkbox) para agregar o modificar un Usuario
+            GroupBox_usuario.Enabled = false;
+            //Actualice el DataGridView 
+            productoBindingSource.DataSource = _productoController.GetAll();
+        }
+
+        private void btn_AceptarCant_Click(object sender, EventArgs e)
+        {
+            var user = (Producto)productoBindingSource.Current;
+            int ACantidad = int.Parse(txt_ACantidad.Text);
+            AgregarCProducto(ACantidad);
+            productoBindingSource.DataSource = _productoController.GetAll();
+            groupBoxverInProducto.Enabled=false;
+        }
+
+        private void btn_CancelarP_Click(object sender, EventArgs e)
+        {
+            groupBoxverInProducto.Enabled = false;
+            //Elimina todo lo que se escribio en los atributos  (Textbox,Checkbox) del Usuario
+            productoBindingSource.CancelEdit();
+            productoBindingSource.DataSource = _productoController.GetAll();
+        }
+
+        private void Btn_AgregarSHE_Click(object sender, EventArgs e)
+        {
+            //helado
+            groupBox_Helado.Enabled = true;
+            groupBox_Atrib_Helado.Enabled=false;
+
+        }
+
+        private void Btn_Agregar_CHinv_Click(object sender, EventArgs e)
+        {
+            //se agregara cantidad de porciones o tambien cantidad de Conos o varquillos o vasitos
+            int Cantidad = int.Parse(txt_CantHv.Text);
+                AgregarCHelado(Cantidad);
+        }
+        private void AgregarCHelado(int Acantidad)
+        {
+            var Agregar = (Helado)heladoBindingSource.Current;
+            _heladoController.Update(Agregar, Acantidad);
+            //Desabilite los atributos (Textbox,Checkbox) para agregar o modificar un Usuario
+            groupBox_Helado.Enabled = false;
+            //Actualice el DataGridView 
+            heladoBindingSource.DataSource = _heladoController.GetAll();
+        }
+
+        private void btn_Cancelar_HeladoInv_Click(object sender, EventArgs e)
+        {
+            groupBox_Helado.Enabled=false;
+            heladoBindingSource.DataSource = _heladoController.GetAll();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            //entregar pedido
+            groupBox_Pedido.Enabled = false;
+            pedidoBindingSource.DataSource = _pedidoController.GetAll();
+        }
+
+        private void Btn_GClientes_Click(object sender, EventArgs e)
+        {
+            groupBox_Cliente.Enabled = false;
+            Panel_HV.Visible = false;
+            Panel_Producto.Visible = false;
+            Panel_HeladoIv.Visible = false;
+            Panel_Pedido.Visible = false;
+            Panel_Cliente.Visible = true;
+            clienteBindingSource.DataSource = _clienteController.GetAll();
+        }
+        //-----------------------------------------------------------------
     }
 }
